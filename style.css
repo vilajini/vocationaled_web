@@ -1,0 +1,133 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f4f4f4;
+  line-height: 1.6;
+}
+
+/* Sticky Navbar with Shrink on Scroll */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #f5fff7;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 40px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: padding 0.3s ease, box-shadow 0.3s ease;
+}
+
+.navbar.shrink {
+  padding: 10px 40px;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15);
+}
+
+.navbar img {
+  height: 80px;
+  transition: height 0.3s ease;
+}
+.navbar.shrink img {
+  height: 60px;
+}
+
+.nav-links {
+  display: flex;
+  gap: 20px;
+}
+.nav-links a {
+  text-decoration: none;
+  color: #000;
+  font-weight: 500;
+}
+.nav-links a:hover {
+  color: #006837;
+}
+
+/* Hero Section */
+.hero {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 60px 20px;
+  background-color: #ffffff;
+}
+.hero-content {
+  flex: 1 1 400px;
+  padding: 20px;
+}
+.hero-content h1 {
+  font-size: 36px;
+  color: #004d26;
+  margin-bottom: 20px;
+}
+.hero-content ul {
+  margin-bottom: 20px;
+}
+.hero-content ul li {
+  list-style-type: disc;
+  margin-left: 20px;
+  margin-bottom: 5px;
+  color: #333;
+}
+.hero-content .buttons {
+  margin-top: 20px;
+}
+.hero-content .buttons a {
+  text-decoration: none;
+  padding: 12px 20px;
+  border-radius: 5px;
+  margin-right: 15px;
+  font-weight: bold;
+  display: inline-block;
+}
+.btn-green {
+  background-color: #2e7d32;
+  color: white;
+}
+.btn-green:hover {
+  background-color: #1b5e20;
+}
+.btn-outline {
+  border: 2px solid #2e7d32;
+  color: #2e7d32;
+}
+.btn-outline:hover {
+  background-color: #e8f5e9;
+}
+.hero-image {
+  flex: 1 1 400px;
+  padding: 20px;
+}
+.hero-image img {
+  max-width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+}
+.image-caption {
+  text-align: center;
+  margin-top: 10px;
+  color: #666;
+  font-size: 14px;
+}
+
+/* Hover Effect */
+#gaps div:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Bounce Animation (optional use) */
+@keyframes bounce {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.05); }
+  100% { transform: scale(1); }
+}
